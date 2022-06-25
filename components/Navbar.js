@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     let [mode, setMode] = useState();
 
     // toggle theme
@@ -40,9 +40,15 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="navbar__content">
-                <Link href="/about">About</Link>
-                <Link href="/skills">Skills</Link>
-                <Link href="/projects">Projects</Link>
+                <Link href="/about">
+                    <a>About</a>
+                </Link>
+                <Link href="/skills">
+                    <a>Skills</a>
+                </Link>
+                <Link href="/projects">
+                    <a>Projects</a>
+                </Link>
                 <a
                     onClick={() => {
                         if (mode === 'light') {
