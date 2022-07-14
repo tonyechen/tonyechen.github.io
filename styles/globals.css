@@ -65,7 +65,8 @@ body.dark {
 }
 
 .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 /*** DEFAULT STYLES ***/
@@ -95,9 +96,9 @@ a {
 .navbar {
     position: sticky;
     top: 0;
+    width: 100%;
     background-color: var(--dark-primary);
     padding: 0 1.5rem;
-    margin-bottom: 1rem;
     min-height: 3rem;
     box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
     display: flex;
@@ -236,21 +237,29 @@ a {
     justify-content: center;
 }
 
-.main__intro h1 {
+.main__intro__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__intro__text h1 {
     font-size: 6rem;
 }
 
-.main__intro div {
+.main__intro__text div {
+    min-width: 300px;
+    max-width: 500px;
     height: 10rem;
 }
 
-.main__intro .pop-up-texts {
+.main__intro__text .pop-up-texts {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0.5rem;
 }
 
-.main__intro span {
+.main__intro__text span {
     display: inline;
     background-color: var(--base-primary);
     width: min-content;
@@ -261,7 +270,7 @@ a {
     font-size: 2rem;
 }
 
-.main__intro .special {
+.main__intro__text .special {
     color: var(--base-primary);
     animation: pop-and-go 5s linear;
 }
@@ -303,10 +312,53 @@ a {
     }
 }
 
+.main__intro__projects {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main__intro__project {
+    height: 100px;
+    width: 100px;
+}
+
+.project__container {
+    box-shadow: var(--base-primary-box-shadow-invert);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 800px) {
     .main {
         width: 80%;
         flex-direction: column;
         overflow-y: visible;
+    }
+
+    .main__card {
+        margin-left: 0;
+    }
+
+    .main__intro {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main__intro__text div {
+        height: 13rem;
+    }
+
+    .main__intro__text .pop-up-texts {
+        justify-content: center;
+    }
+
+    .main__intro__projects {
     }
 }

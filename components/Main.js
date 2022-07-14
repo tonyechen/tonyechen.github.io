@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import IconLink from './IconLink';
 import Link from 'next/link';
+import Project from './Project';
+import Project_short from './Project_short';
 
 const phrases = [
     'I am a Full Stack software developer',
@@ -10,8 +12,9 @@ const phrases = [
     'I am a Web Developer for UCLA Anderson',
     'I am passionate about building software',
     'I love learning new things',
-    'I am a hard core caffine addict',
+    'I am a hard core caffeine addict',
     'I LOVE a good bowl of RAMEN',
+    'I am a horrible speller'
 ];
 const phrases_length = phrases.length;
 
@@ -72,7 +75,7 @@ const Main = () => {
                                 alt="github"
                             />
                             <IconLink
-                                href="https://www.linkedin.com/in/anthony-chen-84391821a/"
+                                href="https://www.linkedin.com/in/anthony-tony-chen/"
                                 class="main__card__links"
                                 img="/linkedin.svg"
                                 alt="linkedin"
@@ -84,25 +87,45 @@ const Main = () => {
                                 alt="email"
                             />
                         </div>
-                        <p className='main__card__text'>There is a paragraph here, WHAT?????!!!!</p>
+                        <p className="main__card__text">
+                            I am a second student at UCLA studying Computer
+                            Science. I am really excited about what I can
+                            accomplish in the future.
+                        </p>
                         <Link href="/about">
                             <a className="main__card__redirect">
-                                Know more about me
+                                More about me
                             </a>
                         </Link>
                         <Link href="/resume.pdf">
-                            <a className="main__card__redirect">
-                                Checkout my Resume
-                            </a>
+                            <a className="main__card__redirect">My Resume</a>
                         </Link>
                     </div>
                 </div>
 
                 <div className="main__intro">
-                    <h4>Hi, I'm</h4>
-                    <h1>Tony Chen.</h1>
-                    <div>
-                        <p className="pop-up-texts">{description}</p>
+                    <div className="main__intro__text">
+                        <h4>Hi, I'm</h4>
+                        <h1>Tony Chen.</h1>
+                        <div>
+                            <p className="pop-up-texts">{description}</p>
+                        </div>
+                    </div>
+
+                    <div className="main__intro__feature__projects">
+                        <h4>Featured Projects:</h4>
+                        <div className="main__intro__projects">
+                            <Project_short
+                                image="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
+                                text="Amazon Clone"
+                                link=""
+                            />
+                            <Project_short
+                                image="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
+                                text="Amazon Clone"
+                                link=""
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
