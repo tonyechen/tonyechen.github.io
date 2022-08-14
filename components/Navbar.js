@@ -33,7 +33,7 @@ const Navbar = (props) => {
             <div className="navbar__logo">
                 <Link href="/">
                     <img
-                        src="https://images-platform.99static.com//yKLNol6zH2gAAYH9mAp8ORh6o6g=/436x1870:1507x2941/fit-in/500x500/projects-files/37/3716/371609/6f1c6c29-ccce-4c3e-8050-ca71c2fa5c12.png"
+                        src="/tony-chen-logo.svg"
                         alt="logo"
                         className="navbar__logo__image"
                     />

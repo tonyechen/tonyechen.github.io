@@ -14,7 +14,7 @@ const phrases = [
     'I love learning new things',
     'I am a hard core caffeine addict',
     'I LOVE a good bowl of RAMEN',
-    'I am a horrible speller'
+    'I am a horrible speller',
 ];
 const phrases_length = phrases.length;
 
@@ -88,24 +88,24 @@ const Main = () => {
                             />
                         </div>
                         <p className="main__card__text">
-                            I am a second student at UCLA studying Computer
-                            Science. I am really excited about what I can
-                            accomplish in the future.
+                            I am a second year student at UCLA studying Computer
+                            Science. I am currently an NSA for UCLA NSAP and a
+                            Web Developer for UCLA Anderson!
                         </p>
-                        <Link href="/about">
-                            <a className="main__card__redirect">
-                                More about me
-                            </a>
-                        </Link>
-                        <Link href="/resume.pdf">
-                            <a className="main__card__redirect">My Resume</a>
-                        </Link>
+                        <div className="main__card__redirect">
+                            <Link href="/about">
+                                <a className="main__card__button">More Me!</a>
+                            </Link>
+                            <Link href="/resume.pdf">
+                                <a className="main__card__button">Resume</a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
                 <div className="main__intro">
                     <div className="main__intro__text">
-                        <h4>Hi, I'm</h4>
+                        <h4>Hi, I&apos;m</h4>
                         <h1>Tony Chen.</h1>
                         <div>
                             <p className="pop-up-texts">{description}</p>
