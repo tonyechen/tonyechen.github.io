@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import IconLink from './IconLink';
 import Link from 'next/link';
-import Project from './Project';
 import Project_short from './Project_short';
 
 const phrases = [
@@ -118,12 +117,12 @@ const Main = () => {
                             <Project_short
                                 image="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
                                 text="Amazon Clone"
-                                link=""
+                                link="/projects"
                             />
                             <Project_short
                                 image="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
                                 text="Amazon Clone"
-                                link=""
+                                link="/projects"
                             />
                         </div>
                     </div>

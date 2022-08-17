@@ -1,0 +1,52 @@
+/*** NAVIGATION BAR ***/
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-primary);
+    padding: 0 1.5rem;
+    min-height: 3rem;
+    box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__logo__image {
+    width: 4rem;
+    height: auto;
+}
+
+.navbar__logo__image:hover {
+    box-shadow: none;
+}
+
+.navbar__content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__content a {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: var(--dark-primary-box-shadow);
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+}
+
+.navbar__content a:focus {
+    box-shadow: var(--dark-primary-box-shadow-invert);
+}
+
+.navbar__content a:hover {
+    box-shadow: none;
+}
+
