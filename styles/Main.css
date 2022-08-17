@@ -184,7 +184,7 @@
 }
 
 .project__container {
-    box-shadow: var(--base-primary-box-shadow-invert);
+    box-shadow: var(--base-primary-box-shadow);
     height: 12rem;
     width: 12rem;
     border-radius: 1rem;
