@@ -115,14 +115,14 @@ const Main = () => {
                         <h4>Featured Projects:</h4>
                         <div className="main__intro__projects">
                             <Project_short
-                                image="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
-                                text="Amazon Clone"
-                                link="/projects"
+                                image="/bruin-study-logo.png"
+                                text="Bruin Study"
+                                link="/projects/#bruin-study"
                             />
                             <Project_short
-                                image="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
-                                text="Amazon Clone"
-                                link="/projects"
+                                image="/takescout-logo.svg"
+                                text="TakeScout"
+                                link="/projects/#takescout"
                             />
                         </div>
                     </div>

@@ -181,6 +181,8 @@
 .main__intro__project {
     height: 100px;
     width: 100px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .project__container {
@@ -190,6 +192,7 @@
     border-radius: 1rem;
     margin: 1rem 1rem 0 0;
     padding: 1.5rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Project_short = (props) => {
     return (
@@ -7,9 +7,11 @@ const Project_short = (props) => {
                 <img
                     className="main__intro__project"
                     src={props.image}
-                    alt="amazon clone"
+                    alt={props.text}
                 />
-                <p>{props.text}</p>
+                <p>
+                    <b>{props.text}</b>
+                </p>
             </div>
         </Link>
     );
