@@ -11,18 +11,21 @@ const About = () => {
 
                 <p className="about__info__content">
                     Hello! My name is Anthony Chen, but you can call me Tony! I
-                    am a second-year at UCLA studying Computer
-                    Science.
+                    am a second-year at UCLA studying Computer Science.
                     <br />
                     <br />
                     My current interest is building full-stack web applications,
                     but I love to explore other fields of CS as well: data
-                    analytics, mobile development, machine learning,
-                    operating system, cloud computing, game development,
-                    computer graphics, you name it!
+                    analytics, mobile development, machine learning, operating
+                    system, cloud computing, game development, computer
+                    graphics, you name it!
                     <br />
                     <br />
-                    I am the Lead Product Developer for the BruinLabs TakeScout project team, designing a fully functional food delivery service app. I am also currently an New Student Advisor at UCLA, where I help hundreds of students transition into UCLA.
+                    I am the Lead Product Developer for the BruinLabs
+                    TakeScout project team, designing a fully functional food
+                    delivery service app. I am also currently an New Student
+                    Advisor at UCLA, where I help hundreds of students
+                    transition into UCLA.
                 </p>
             </div>
 
@@ -30,7 +33,7 @@ const About = () => {
 
             <h1 className="about__title">Experience</h1>
             <div className="about__container about__experience">
-                Things that I've been doing...
+                Things that I&apos;ve been doing...
             </div>
         </div>
     );
