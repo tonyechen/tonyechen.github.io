@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <link href="/tony-chen-logo" />
+                <link href="/tony-chen-logo.svg" />
                 <title>Tony Chen</title>
             </Head>
             <Component {...pageProps} />

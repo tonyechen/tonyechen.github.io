@@ -1,5 +1,6 @@
 @import './Navbar.css';
 @import './Main.css';
+@import './About.css';
 
 body {
     --dark-primary: #76ba99;
@@ -93,4 +94,11 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+hr {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    border-width: 0.1px;
+    margin: 2rem 0;
 }
