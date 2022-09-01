@@ -93,7 +93,7 @@ const Main = () => {
                         </p>
                         <div className="main__card__redirect">
                             <Link href="/about">
-                                <a className="main__card__button">More Me!</a>
+                                <a className="main__card__button">More</a>
                             </Link>
                             <Link href="/resume.pdf">
                                 <a className="main__card__button">Resume</a>
