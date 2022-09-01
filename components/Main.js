@@ -8,7 +8,6 @@ import Project_short from './Project_short';
 const phrases = [
     'I am a Full Stack software developer',
     'I study Computer Science at UCLA',
-    'I am a Web Developer for UCLA Anderson',
     'I am passionate about building software',
     'I love learning new things',
     'I am a hard core caffeine addict',
