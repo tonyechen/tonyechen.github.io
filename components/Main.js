@@ -88,8 +88,7 @@ const Main = () => {
                         </div>
                         <p className="main__card__text">
                             I am a second year student at UCLA studying Computer
-                            Science. I am currently an NSA for UCLA NSAP and a
-                            Web Developer for UCLA Anderson!
+                            Science. I am currently on the hunt for an internship!
                         </p>
                         <div className="main__card__redirect">
                             <Link href="/about">
