@@ -1,5 +1,9 @@
 import React from 'react';
 
+const languages = ['Javascript', 'Python', 'C++', 'C'];
+const technologies = ['HTML/CSS', 'SASS', 'React', 'React Native', 'Next', 'Recoil', 'Express/Node.js', 'BootStrap','TailWindCSS','Selenium'];
+const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL'];
+
 const About = () => {
     return (
         <div className="about">
@@ -39,32 +43,25 @@ const About = () => {
                     <div>
                         <h4>Strongest Languages:</h4>
                         <p className="about__skills__container">
-                            <span>Javascript</span>
-                            <span>Python</span>
-                            <span>C++</span>
-                            <span>C</span>
+                            {languages.map((item) => {
+                                return <span>{item}</span>;
+                            })}
                         </p>
                     </div>
                     <div>
                         <h4>Technologies:</h4>
                         <p className="about__skills__container">
-                            <span>HTML/CSS</span>
-                            <span>SASS</span>
-                            <span>React</span>
-                            <span>Next</span>
-                            <span>Recoil</span>
-                            <span>Express/Node.js</span>
-                            <span>BootStrap</span>
-                            <span>TailWindCSS</span>
+                            {technologies.map((item) => {
+                                return <span>{item}</span>;
+                            })}
                         </p>
                     </div>
                     <div>
                         <h4>Database:</h4>
                         <p className="about__skills__container">
-                            <span>SQL</span>
-                            <span>Firebase</span>
-                            <span>MongoDB</span>
-                            <span>PostgreSQL</span>
+                            {databases.map((item) => {
+                                return <span>{item}</span>;
+                            })}
                         </p>
                     </div>
                 </div>
