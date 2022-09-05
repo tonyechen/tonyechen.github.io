@@ -1,7 +1,18 @@
 import React from 'react';
 
 const languages = ['Javascript', 'Python', 'C++', 'C'];
-const technologies = ['HTML/CSS', 'SASS', 'React', 'React Native', 'Next', 'Recoil', 'Express/Node.js', 'BootStrap','TailWindCSS','Selenium'];
+const technologies = [
+    'HTML/CSS',
+    'SASS',
+    'React',
+    'React Native',
+    'Next',
+    'Recoil',
+    'Express/Node.js',
+    'BootStrap',
+    'TailWindCSS',
+    'Selenium',
+];
 const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL'];
 
 const About = () => {
@@ -44,7 +55,7 @@ const About = () => {
                         <h4>Strongest Languages:</h4>
                         <p className="about__skills__container">
                             {languages.map((item) => {
-                                return <span>{item}</span>;
+                                return <span key={item}>{item}</span>;
                             })}
                         </p>
                     </div>
@@ -52,7 +63,7 @@ const About = () => {
                         <h4>Technologies:</h4>
                         <p className="about__skills__container">
                             {technologies.map((item) => {
-                                return <span>{item}</span>;
+                                return <span key={item}>{item}</span>;
                             })}
                         </p>
                     </div>
@@ -60,7 +71,7 @@ const About = () => {
                         <h4>Database:</h4>
                         <p className="about__skills__container">
                             {databases.map((item) => {
-                                return <span>{item}</span>;
+                                return <span key={item}>{item}</span>;
                             })}
                         </p>
                     </div>
