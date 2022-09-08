@@ -185,7 +185,7 @@
     margin-bottom: 1rem;
 }
 
-.project__container {
+.main__project__container {
     box-shadow: var(--base-primary-box-shadow);
     height: 12rem;
     width: 12rem;
@@ -200,7 +200,7 @@
     transition: 300ms ease-in-out;
 }
 
-.project__container:hover {
+.main__project__container:hover {
     box-shadow: none;
     cursor: pointer;
 }

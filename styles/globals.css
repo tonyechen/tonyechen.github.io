@@ -1,6 +1,7 @@
 @import './Navbar.css';
 @import './Main.css';
 @import './About.css';
+@import './Project.css';
 
 body {
     --dark-primary: #76ba99;
