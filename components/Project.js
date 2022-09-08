@@ -1,11 +1,11 @@
 import React from "react";
 
 const Project = (props) => {
-  return <div className="project__container">
+  return <a className="project__container" href={props.link}>
     <img src={props.image} alt="image" className="project__image"/>
     <p>{props.name}</p>
     <p>{props.description}</p>
-  </div>;
+  </a>;
 };
 
 export default Project;

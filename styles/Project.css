@@ -17,6 +17,11 @@
     border: none;
     width: 100%;
     margin: 20px 0;
+    font-size: 16px;
+}
+
+.project__search__bar::placeholder {
+    color: var(--base-text-color);
 }
 
 .projects__container {
@@ -25,13 +30,30 @@
     gap: 50px;
     width: 100%;
     justify-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        width: 80%
+    }
+
+    .projects__container {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+    }    
 }
 
 .project__container {
     height: 100%;
     width: 100%;
     box-shadow: var(--base-primary-box-shadow);
-    padding: 30px
+    padding: 30px;
 }
 
 .project__image {

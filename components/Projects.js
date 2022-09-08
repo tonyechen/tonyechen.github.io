@@ -15,11 +15,13 @@ const Projects = () => {
                     image={'/takescout-logo.svg'}
                     name={'TakeScout'}
                     description={'A delivery service app'}
+                    link={'https://github.com/tonyechen/takescout'}
                 />
                 <Project
                     image={'/bruin-study-logo.png'}
                     name={'Bruin Study'}
                     description={'A student pairing app'}
+                    link={'https://github.com/tonyechen/bruin-study'}
                 />
                 <Project
                     image={
@@ -27,6 +29,7 @@ const Projects = () => {
                     }
                     name={'Amazon clone'}
                     description={'A light weight amazon clone'}
+                    link={'https://clone-123c4.web.app/'}
                 />
                 <Project
                     image={
@@ -34,6 +37,9 @@ const Projects = () => {
                     }
                     name={'Spotify Player'}
                     description={'A simple spotify music player'}
+                    link={
+                        'https://spotify-clone-git-main-tonyechen.vercel.app/'
+                    }
                 />
             </div>
         </div>
