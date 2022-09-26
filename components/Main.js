@@ -51,7 +51,7 @@ const Main = () => {
                     <div className="main__image">
                         <div className="main__image__wrapper">
                             <Image
-                                src="/tony-chen-side.JPG"
+                                src="/tony-chen-main.JPG"
                                 width="300"
                                 height="300"
                                 layout="responsive"
