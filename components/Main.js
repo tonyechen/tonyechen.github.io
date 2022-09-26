@@ -61,7 +61,7 @@ const Main = () => {
                     <div className="main__card__info">
                         <div className="main__card__link_container">
                             <IconLink
-                                href="https://www.instagram.com/chen.thonyy/"
+                                href="https://www.instagram.com/chen.thony/"
                                 class="main__card__links"
                                 img="/instagram.svg"
                                 alt="instagram"
