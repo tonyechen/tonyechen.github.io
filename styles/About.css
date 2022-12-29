@@ -1,11 +1,10 @@
 .about {
     max-width: 1000px;
     margin: auto;
-    padding: 2rem 0;
 }
 
 .about__container {
-    box-shadow: var(--base-primary-box-shadow);
+
     padding: 2rem;
     padding-top: 4rem;
     border-radius: 1rem;
@@ -13,10 +12,8 @@
 }
 
 .about__title {
-    box-shadow: var(--base-primary-box-shadow-invert);
     background-color: var(--base-primary);
     text-align: center;
-    padding: 1rem 2rem;
     max-width: 80%;
     margin: auto;
     border-radius: 1rem;
@@ -31,7 +28,7 @@
 }
 
 .about__info__pic {
-    box-shadow: var(--base-primary-box-shadow-invert);
+    box-shadow: var(--base-primary-box-shadow);
     width: 300px;
     height: min-content;
     border-radius: 2rem;
@@ -50,11 +47,12 @@
 
 .about__info__subsection {
     grid-column: 1 / span 2;
+    padding-bottom: 1rem;
 }
 
 .about__subsection__title {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about__subsection__title::after {

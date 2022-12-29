@@ -18,10 +18,13 @@ const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL'];
 const About = () => {
     return (
         <div className="about">
-            <h1 className="about__title">&#10020; About Me &#10020;</h1>
+            <h1 className="about__title">About Me</h1>
             <div className="about__container about__info">
                 <div className="about__info__pic">
-                    <img src="/tony-chen-professional.JPG" alt="eww pic of tony" />
+                    <img
+                        src="/tony-chen-professional.JPG"
+                        alt="eww pic of tony"
+                    />
                 </div>
 
                 <p className="about__info__content">
@@ -41,11 +44,6 @@ const About = () => {
                     Advisor at UCLA, where I help hundreds of students
                     transition into UCLA.
                 </p>
-
-                <div className="about__info__subsection">
-                    <h3 className="about__subsection__title">Experience</h3>
-                    <p>under construction...&#128736;&#128736;&#128736;</p>
-                </div>
 
                 <div className="about__info__subsection">
                     <h3 className="about__subsection__title">
@@ -75,6 +73,11 @@ const About = () => {
                             })}
                         </p>
                     </div>
+                </div>
+
+                <div className="about__info__subsection">
+                    <h3 className="about__subsection__title">Experience</h3>
+                    <p>under construction...&#128736;&#128736;&#128736;</p>
                 </div>
             </div>
         </div>
