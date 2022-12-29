@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useEffect } from 'react';
-import IconLink from './IconLink';
+import IconLink from './icons/IconLink';
 import Link from 'next/link';
-import Project_short from './Project_short';
+import Project_short from './projects/Project_short';
 
 const phrases = [
     'I am a Full Stack software developer',
@@ -87,7 +87,8 @@ const Main = () => {
                         </div>
                         <p className="main__card__text">
                             I am a second year student at UCLA studying Computer
-                            Science. I am currently on the hunt for an internship!
+                            Science. I am currently on the hunt for an
+                            internship!
                         </p>
                         <div className="main__card__redirect">
                             <Link href="/about">

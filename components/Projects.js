@@ -1,5 +1,5 @@
-import Project from './Project';
-import Project_short from './Project_short';
+import Project from './projects/Project';
+import Project_short from './projects/Project_short';
 
 const Projects = () => {
     return (
