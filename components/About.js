@@ -1,9 +1,8 @@
 import React from 'react';
+import ExperienceBlock from './ExperienceBlock';
 
-const languages = ['Javascript', 'Python', 'C++', 'C'];
+const languages = ['Javascript', 'Python', 'C++', 'C', 'HTML/CSS', 'SASS'];
 const technologies = [
-    'HTML/CSS',
-    'SASS',
     'React',
     'React Native',
     'Next',
@@ -12,6 +11,8 @@ const technologies = [
     'BootStrap',
     'TailWindCSS',
     'Selenium',
+    'Git',
+    'AWS',
 ];
 const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL'];
 
@@ -33,16 +34,15 @@ const About = () => {
                     <br />
                     <br />
                     My current interest is building full-stack web applications,
-                    but I love to explore other fields of CS as well: data
-                    analytics, mobile development, machine learning, operating
-                    system, cloud computing, game development, computer
+                    but I'm actively exploring other fields of CS as well:
+                    embedded system, data analytics, mobile development, machine
+                    learning, operating system, cloud computing, computer
                     graphics, you name it!
                     <br />
-                    <br />I am the Lead Product Developer for the BruinLabs
-                    TakeScout project team, designing a fully functional food
-                    delivery service app. I am also currently an New Student
-                    Advisor at UCLA, where I help hundreds of students
-                    transition into UCLA.
+                    <br />I am currently a developer for BruinBot, building the
+                    backend service for autonomous delivery robots. I am also
+                    part of BruinRacing, working on the data collection system
+                    for SMV Electric Vehicle. 
                 </p>
 
                 <div className="about__info__subsection">
@@ -78,6 +78,7 @@ const About = () => {
                 <div className="about__info__subsection">
                     <h3 className="about__subsection__title">Experience</h3>
                     <p>under construction...&#128736;&#128736;&#128736;</p>
+                    <ExperienceBlock></ExperienceBlock>
                 </div>
             </div>
         </div>
