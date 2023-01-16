@@ -34,7 +34,7 @@ const About = () => {
                     <br />
                     <br />
                     My current interest is building full-stack web applications,
-                    but I'm actively exploring other fields of CS as well:
+                    but I&apos;m actively exploring other fields of CS as well:
                     embedded system, data analytics, mobile development, machine
                     learning, operating system, cloud computing, computer
                     graphics, you name it!
@@ -42,7 +42,7 @@ const About = () => {
                     <br />I am currently a developer for BruinBot, building the
                     backend service for autonomous delivery robots. I am also
                     part of BruinRacing, working on the data collection system
-                    for SMV Electric Vehicle. 
+                    for SMV Electric Vehicle.
                 </p>
 
                 <div className="about__info__subsection">
