@@ -7,12 +7,19 @@ import Project_short from './projects/Project_short';
 
 const phrases = [
     'I am a Full Stack software developer',
-    'I study Computer Science at UCLA',
+    'I love any raquet sports, ESPECIALLY TENNIS',
     'I am passionate about building software',
-    'I love learning new things',
     'I am a hard core caffeine addict',
     'I LOVE a good bowl of RAMEN',
-    'I am a horrible speller',
+    'I am horible at speling',
+    'I can bench 185lbs , this is not a flex',
+    'I wish I can bench 225 lbs :(',
+    'I am currently getting my feet wet with AI !',
+    'I enjoy a good game of TENNIS',
+    'Did I mention I like beach volleyball?',
+    '<3 EVERYTHING EVERYWHERE ALL AT ONCE',
+    'My name is pronounced Toe Knee',
+    'I am an aspiring brogrammer',
 ];
 const phrases_length = phrases.length;
 
@@ -86,9 +93,9 @@ const Main = () => {
                             />
                         </div>
                         <p className="main__card__text">
-                            I am an avid developer and a second year student at UCLA studying Computer
+                            I am an avid developer and a 3rd year student at UCLA studying Computer
                             Science! I am currently on the hunt for an
-                            internship for summer 2023!
+                            internship for summer 2024!
                         </p>
                         <div className="main__card__redirect">
                             <Link href="/about">
