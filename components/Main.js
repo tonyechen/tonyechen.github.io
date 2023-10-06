@@ -12,13 +12,13 @@ const phrases = [
     'I am a hard core caffeine addict',
     'I LOVE a good bowl of RAMEN',
     'I am horible at speling',
-    'I can bench 185lbs , this is not a flex',
-    'I wish I can bench 225 lbs :(',
+    'I can bench 195lbs , this is not a flex',
+    'I wish I can bench 225 lbs',
     'I am currently getting my feet wet with AI !',
     'I enjoy a good game of TENNIS',
-    'Did I mention I like beach volleyball?',
-    '<3 EVERYTHING EVERYWHERE ALL AT ONCE',
-    'My name is pronounced Toe Knee',
+    'I did mention I like beach volleyball, right?',
+    'I <3 EVERYTHING EVERYWHERE ALL AT ONCE',
+    'I am Toe Knee, if you can pronounce it',
     'I am an aspiring brogrammer',
 ];
 const phrases_length = phrases.length;

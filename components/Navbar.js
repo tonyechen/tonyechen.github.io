@@ -11,8 +11,8 @@ const Navbar = (props) => {
             if (!mode) {
                 let local_mode = window.localStorage.getItem('theme');
                 if (!local_mode) {
-                    window.localStorage.setItem('theme', 'light');
-                    setMode('light');
+                    window.localStorage.setItem('theme', 'dark');
+                    setMode('dark');
                 } else {
                     setMode(local_mode);
                 }

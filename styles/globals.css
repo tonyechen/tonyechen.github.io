@@ -4,21 +4,21 @@
 @import './Project.css';
 
 body {
-    --dark-primary: #76ba99;
-    --base-primary: #adcf9f;
-    --light-primary: #ced89e;
-    --secondary: #ffdcae;
+    --dark-primary: #d3eacf;
+    --base-primary: #e2ecdd;
+    --light-primary: #fceed9;
+    --secondary: #ffebd2;
 
-    --base-primary-light-shadow: #c0e7b0;
-    --base-primary-dark-shadow: #84a179;
+    --base-primary-light-shadow: #f3fff4;
+    --base-primary-dark-shadow: #b3caac;
     --base-primary-box-shadow: -0.3rem -0.3rem 1rem var(--base-primary-light-shadow),
         0.3rem 0.3rem 1rem var(--base-primary-dark-shadow);
     --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
             var(--base-primary-dark-shadow),
         inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
 
-    --dark-primary-light-shadow: #92e7be;
-    --dark-primary-dark-shadow: #56866f;
+    --dark-primary-light-shadow: #f1fdee;
+    --dark-primary-dark-shadow: #9dc8a0;
     --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
         0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
     --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
@@ -26,14 +26,14 @@ body {
         inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
 
     --general-light-shadow: rgba(255, 255, 255, 0.5);
-    --general-dark-shadow: #0000005d;
+    --general-dark-shadow: #94b095;
     --general-box-shadow: -0.2rem -0.2rem 0.3rem var(--general-light-shadow),
         0.2rem 0.2rem 0.3rem var(--general-dark-shadow);
     --general-box-shadow-invert: inset 0.2rem 0.2rem 0.3rem
             var(--general-dark-shadow),
         inset -0.2rem -0.2rem 0.3rem var(--general-light-shadow);
 
-    --text-color: #2c7451;
+    --text-color: #467150;
     --svg-color-filter: invert(39%) sepia(27%) saturate(861%) hue-rotate(98deg)
         brightness(90%) contrast(88%);
     color: var(--text-color);
