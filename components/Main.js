@@ -12,12 +12,14 @@ const phrases = [
     'I am a hard core caffeine addict',
     'I LOVE a good bowl of RAMEN',
     'I am horible at speling',
-    'I can bench 195lbs , this is not a flex',
+    'I can bench 205lbs , this is not a flex',
+    'I can deadlift 315lbs',
+    'I can squat 245lbs',
     'I wish I can bench 225 lbs',
     'I am currently getting my feet wet with AI !',
     'I enjoy a good game of TENNIS',
     'I did mention I like beach volleyball, right?',
-    'I <3 EVERYTHING EVERYWHERE ALL AT ONCE',
+    'I <3 Everything Everywhere All At Once',
     'I am Toe Knee, if you can pronounce it',
     'I am an aspiring brogrammer',
 ];
@@ -25,30 +27,32 @@ const phrases_length = phrases.length;
 
 const Main = () => {
     const [description, setDescription] = useState(
-        phrases[0].split(' ').map((word) => {
+        phrases[0].split(' ').map((word, index) => {
             return (
-                <span key={word} className="special">
-                    {word}
-                </span>
+              <span key={word + index} className="special">
+                {word}
+              </span>
             );
         })
     );
 
     useEffect(() => {
-        setInterval(() => {
+        const intervalId = setInterval(() => {
             let phrase =
                 phrases[Math.round(Math.random() * phrases_length)] ??
                 phrases[0];
             setDescription(
-                phrase.split(' ').map((word) => {
+                phrase.split(' ').map((word, index) => {
                     return (
-                        <span key={word + phrase} className="special">
+                        <span key={word + phrase + index} className="special">
                             {word}
                         </span>
                     );
                 })
             );
         }, 5500);
+        
+        return () => clearInterval(intervalId)
     }, []);
 
     return (
