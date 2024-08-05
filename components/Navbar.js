@@ -40,7 +40,7 @@ const Navbar = (props) => {
                 </Link>
             </div>
             <div className="navbar__content">
-                <Link href="/about">
+                <Link href="#about">
                     <a>About</a>
                 </Link>
                 <Link href="/projects">

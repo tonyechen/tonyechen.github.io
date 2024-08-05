@@ -20,7 +20,7 @@ const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL', 'Oracle'];
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h1 className="about__title">About Me</h1>
       <div className="about__container about__info">
         <div className="about__info__pic">

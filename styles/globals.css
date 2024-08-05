@@ -4,96 +4,95 @@
 @import './Project.css';
 
 body {
-    --dark-primary: #d3eacf;
-    --base-primary: #e2ecdd;
-    --light-primary: #fceed9;
-    --secondary: #ffebd2;
+  --dark-primary: #fddbb5;
+  --base-primary: #f0eadb;
+  --light-primary: #FFFFFF;
+  --secondary: #cdc2a9;
 
-    --base-primary-light-shadow: #f3fff4;
-    --base-primary-dark-shadow: #b3caac;
-    --base-primary-box-shadow: -0.3rem -0.3rem 1rem var(--base-primary-light-shadow),
-        0.3rem 0.3rem 1rem var(--base-primary-dark-shadow);
-    --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
-            var(--base-primary-dark-shadow),
-        inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
+  --base-primary-light-shadow: #ffffef;
+  --base-primary-dark-shadow: #dad5c7;
+  --base-primary-box-shadow: -0.3rem -0.3rem 1rem var(--base-primary-light-shadow),
+    0.3rem 0.3rem 1rem var(--base-primary-dark-shadow);
+  --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+      var(--base-primary-dark-shadow),
+    inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
 
-    --dark-primary-light-shadow: #f1fdee;
-    --dark-primary-dark-shadow: #9dc8a0;
-    --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
-        0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
-    --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
-            var(--dark-primary-dark-shadow),
-        inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
+  --dark-primary-light-shadow: #f1fdee;
+  --dark-primary-dark-shadow: #9dc8a0;
+  --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
+    0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
+  --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+      var(--dark-primary-dark-shadow),
+    inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
 
-    --general-light-shadow: rgba(255, 255, 255, 0.5);
-    --general-dark-shadow: #94b095;
-    --general-box-shadow: -0.2rem -0.2rem 0.3rem var(--general-light-shadow),
-        0.2rem 0.2rem 0.3rem var(--general-dark-shadow);
-    --general-box-shadow-invert: inset 0.2rem 0.2rem 0.3rem
-            var(--general-dark-shadow),
-        inset -0.2rem -0.2rem 0.3rem var(--general-light-shadow);
+  --general-light-shadow: rgba(255, 255, 255, 0.5);
+  --general-dark-shadow: #94b095;
+  --general-box-shadow: -0.2rem -0.2rem 0.3rem var(--general-light-shadow),
+    0.2rem 0.2rem 0.3rem var(--general-dark-shadow);
+  --general-box-shadow-invert: inset 0.2rem 0.2rem 0.3rem
+      var(--general-dark-shadow),
+    inset -0.2rem -0.2rem 0.3rem var(--general-light-shadow);
 
-    --text-color: #467150;
-    --svg-color-filter: invert(39%) sepia(27%) saturate(861%) hue-rotate(98deg)
-        brightness(90%) contrast(88%);
-    color: var(--text-color);
-    font-size: 1.3rem;
+  --text-color: #604a11;
+  --svg-color-filter: invert(24%) sepia(64%) saturate(534%) hue-rotate(6deg) brightness(102%) contrast(93%);
+  color: var(--text-color);
+  font-size: 1.3rem;
 }
 
 body.dark {
-    --dark-primary: #1d2d50;
-    --base-primary: #133b5c;
-    --light-primary: #1e5f74;
-    --secondary: #fcdab7;
+  --dark-primary: #1d2d50;
+  --base-primary: #133b5c;
+  --light-primary: #1e5f74;
+  --secondary: #fcdab7;
 
-    --base-primary-light-shadow: #194b74;
-    --base-primary-dark-shadow: #0b2336;
-    --base-primary-box-shadow: -0.3rem -0.3rem 1rem var(--base-primary-light-shadow),
-        0.3rem 0.3rem 1rem var(--base-primary-dark-shadow);
-    --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
-            var(--base-primary-dark-shadow),
-        inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
+  --base-primary-light-shadow: #194b74;
+  --base-primary-dark-shadow: #0b2336;
+  --base-primary-box-shadow: -0.3rem -0.3rem 0.5rem var(--base-primary-light-shadow),
+    0.3rem 0.3rem 0.5rem var(--base-primary-dark-shadow);
+  --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+      var(--base-primary-dark-shadow),
+    inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
 
-    --dark-primary-light-shadow: #304779;
-    --dark-primary-dark-shadow: #0d1424;
-    --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
-        0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
-    --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
-            var(--dark-primary-dark-shadow),
-        inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
+  --dark-primary-light-shadow: #304779;
+  --dark-primary-dark-shadow: #0d1424;
+  --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
+    0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
+  --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+      var(--dark-primary-dark-shadow),
+    inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
 
-    --text-color: white;
-    --svg-color-filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(81deg)
-        brightness(100%) contrast(101%);
-    color: var(--text-color);
-    font-size: 1.3rem;
+  --text-color: white;
+  --svg-color-filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(81deg)
+    brightness(100%) contrast(101%);
+  color: var(--text-color);
+  font-size: 1.3rem;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*** DEFAULT STYLES ***/
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: var(--base-primary);
-    min-width: 400px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--base-primary);
+  min-width: 400px;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
