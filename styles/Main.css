@@ -211,14 +211,16 @@
         width: 80%;
         flex-direction: column;
         overflow-y: visible;
+        height: 950px;
     }
 
     .main__card {
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
     .main__intro {
         text-align: center;
+        display: block;
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
@@ -226,6 +228,15 @@
 
     .main__intro__text div {
         height: 13rem;
+    }
+
+    .main__intro__text h1 {
+        font-size: 4.5rem;
+    }
+
+    .main__intro__text span {
+        font-size: 1.7rem;
+        text-align: left;
     }
 
     .main__intro__text .pop-up-texts {
@@ -241,5 +252,9 @@
     .project__container {
         margin: 1rem 0;
 
+    }
+
+    .main__intro__feature__projects {
+        display: none;
     }
 }

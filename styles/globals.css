@@ -2,6 +2,7 @@
 @import './Main.css';
 @import './About.css';
 @import './Project.css';
+@import './Experience.css';
 
 body {
   --dark-primary: #fddbb5;

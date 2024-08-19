@@ -1,7 +1,15 @@
 import React from 'react';
 import ExperienceBlock from './ExperienceBlock';
 
-const languages = ['Javascript', 'TypeScript', 'Python', 'C++', 'C', 'HTML/CSS', 'SASS'];
+const languages = [
+  'Javascript',
+  'TypeScript',
+  'Python',
+  'C++',
+  'C',
+  'HTML/CSS',
+  'SASS',
+];
 const technologies = [
   'React',
   'React Native',
@@ -14,7 +22,7 @@ const technologies = [
   'Selenium',
   'Git',
   'AWS',
-  'Docker'
+  'Docker',
 ];
 const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL', 'Oracle'];
 
@@ -23,10 +31,6 @@ const About = () => {
     <div className="about" id="about">
       <h1 className="about__title">About Me</h1>
       <div className="about__container about__info">
-        <div className="about__info__pic">
-          <img src="/tony-chen-professional.JPG" alt="eww pic of tony" />
-        </div>
-
         <p className="about__info__content">
           Hello! My name is Anthony Chen, but you can call me Tony! I am a 3rd
           year at UCLA studying Computer Science.
@@ -75,8 +79,10 @@ const About = () => {
 
         <div className="about__info__subsection">
           <h3 className="about__subsection__title">Experience</h3>
-          <p>under construction...&#128736;&#128736;&#128736;</p>
-          <ExperienceBlock></ExperienceBlock>
+          <div className='about__subsection___experience__container'></div>
+          <ExperienceBlock />
+          <ExperienceBlock />
+          <ExperienceBlock />
         </div>
       </div>
     </div>
