@@ -76,6 +76,10 @@
 /* Mobile Styles */
 
 @media only screen and (max-width: 900px) {
+    .about {
+        min-width: 100%;
+    }
+
     .about__container {
         width: 90%;
         margin: auto;
@@ -86,13 +90,13 @@
     }
 
     .about__info__content {
-        padding: 2rem 0;
+        padding: 2rem;
         font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .about__title {
+    /* .about__title {
         font-size: 30px;
-    }
+    } */
 }

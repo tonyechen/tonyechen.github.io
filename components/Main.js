@@ -65,13 +65,13 @@ const Main = () => {
           <motion.div
             className="main__card"
             ref={ref}
-            initial={{ opacity: 0, x: -100 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 100 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
               type: 'spring',
               stiffness: 100,
               damping: 10,
-              duration: 1,
+              duration: 0.7,
             }}
           >
             <div className="main__image">
@@ -127,13 +127,13 @@ const Main = () => {
           <motion.div
             className="main__intro"
             ref={ref}
-            initial={{ opacity: 0, x: 100 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 100 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
               type: 'spring',
               stiffness: 100,
               damping: 10,
-              duration: 1,
+              duration: 0.7,
             }}
           >
             <div className="main__intro__text">
