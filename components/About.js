@@ -1,5 +1,7 @@
 import React from 'react';
 import ExperienceBlock from './ExperienceBlock';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const languages = [
   'Javascript',
@@ -27,8 +29,17 @@ const technologies = [
 const databases = ['SQL', 'Firebase', 'MongoDB', 'PostgreSQL', 'Oracle'];
 
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="about" id="about">
+    <motion.div
+      className="about"
+      id="about"
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="about__title">About Me</h1>
       <div className="about__container about__info">
         <p className="about__info__content">
@@ -49,7 +60,7 @@ const About = () => {
           Autonomous Rover.
         </p>
 
-        <div className="about__info__subsection">
+        {/* <div className="about__info__subsection">
           <h3 className="about__subsection__title">Relevent Skills</h3>
           <div>
             <h4>Strongest Languages:</h4>
@@ -75,17 +86,25 @@ const About = () => {
               })}
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="about__info__subsection">
-          <h3 className="about__subsection__title">Experience</h3>
-          <div className='about__subsection___experience__container'></div>
-          <ExperienceBlock />
-          <ExperienceBlock />
-          <ExperienceBlock />
+          <h1 className="about__subsection__title">Experience</h1>
+          <div className="about__subsection___experience__container">
+            <motion.div
+              className="experience__bar"
+              ref={ref}
+              initial={{ height: '0%' }} // Start with 0% width
+              animate={isInView ? { height: '100%' } : {}} // Expand to 100% width when in view
+              transition={{ duration: 5.0, ease: 'easeInOut' }} // Smooth transition
+            />
+            <ExperienceBlock position="left" />
+            <ExperienceBlock position="right" />
+            <ExperienceBlock position="left" />
+          </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

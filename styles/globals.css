@@ -5,66 +5,66 @@
 @import './Experience.css';
 
 body {
-  --dark-primary: #fddbb5;
-  --base-primary: #f0eadb;
+  --dark-primary: #dbe2f4;
+  --base-primary: #f4f5f8;
   --light-primary: #FFFFFF;
   --secondary: #cdc2a9;
 
-  --base-primary-light-shadow: #ffffef;
-  --base-primary-dark-shadow: #dad5c7;
-  --base-primary-box-shadow: -0.3rem -0.3rem 1rem var(--base-primary-light-shadow),
-    0.3rem 0.3rem 1rem var(--base-primary-dark-shadow);
-  --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+  --base-primary-light-shadow: #ffffff;
+  --base-primary-dark-shadow: #e8e9ec;
+  --base-primary-box-shadow: -0.5rem -0.5rem 1rem var(--base-primary-light-shadow),
+    0.5rem 0.5rem 1rem var(--base-primary-dark-shadow);
+  --base-primary-box-shadow-invert: inset 0.5rem 0.5rem 1rem
       var(--base-primary-dark-shadow),
-    inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
+    inset -0.5rem -0.5rem 1rem var(--base-primary-light-shadow);
 
   --dark-primary-light-shadow: #f1fdee;
   --dark-primary-dark-shadow: #9dc8a0;
-  --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
-    0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
-  --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+  --dark-primary-box-shadow: -0.5rem -0.5rem 1rem var(--dark-primary-light-shadow),
+    0.5rem 0.5rem 1rem var(--dark-primary-dark-shadow);
+  --dark-primary-box-shadow-invert: inset 0.5rem 0.5rem 1rem
       var(--dark-primary-dark-shadow),
-    inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
+    inset -0.5rem -0.5rem 1rem var(--dark-primary-light-shadow);
 
   --general-light-shadow: rgba(255, 255, 255, 0.5);
   --general-dark-shadow: #94b095;
-  --general-box-shadow: -0.2rem -0.2rem 0.3rem var(--general-light-shadow),
-    0.2rem 0.2rem 0.3rem var(--general-dark-shadow);
-  --general-box-shadow-invert: inset 0.2rem 0.2rem 0.3rem
+  --general-box-shadow: -0.2rem -0.2rem 0.5rem var(--general-light-shadow),
+    0.2rem 0.2rem 0.5rem var(--general-dark-shadow);
+  --general-box-shadow-invert: inset 0.2rem 0.2rem 0.5rem
       var(--general-dark-shadow),
-    inset -0.2rem -0.2rem 0.3rem var(--general-light-shadow);
+    inset -0.2rem -0.2rem 0.5rem var(--general-light-shadow);
 
-  --text-color: #604a11;
-  --svg-color-filter: invert(24%) sepia(64%) saturate(534%) hue-rotate(6deg) brightness(102%) contrast(93%);
+  --text-color: #293e75;
+  --svg-color-filter: invert(22%) sepia(87%) saturate(423%) hue-rotate(183deg) brightness(90%) contrast(96%);
   color: var(--text-color);
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 body.dark {
-  --dark-primary: #1d2d50;
-  --base-primary: #133b5c;
+  --dark-primary: #272e44;
+  --base-primary: #252832;
   --light-primary: #1e5f74;
   --secondary: #fcdab7;
 
-  --base-primary-light-shadow: #194b74;
-  --base-primary-dark-shadow: #0b2336;
-  --base-primary-box-shadow: -0.3rem -0.3rem 0.5rem var(--base-primary-light-shadow),
-    0.3rem 0.3rem 0.5rem var(--base-primary-dark-shadow);
-  --base-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+  --base-primary-light-shadow: #272a35;
+  --base-primary-dark-shadow: #232630;
+  --base-primary-box-shadow: -0.5rem -0.5rem 0.5rem var(--base-primary-light-shadow),
+    0.5rem 0.5rem 0.5rem var(--base-primary-dark-shadow);
+  --base-primary-box-shadow-invert: inset 0.5rem 0.5rem 1rem
       var(--base-primary-dark-shadow),
-    inset -0.3rem -0.3rem 1rem var(--base-primary-light-shadow);
+    inset -0.5rem -0.5rem 1rem var(--base-primary-light-shadow);
 
   --dark-primary-light-shadow: #304779;
   --dark-primary-dark-shadow: #0d1424;
-  --dark-primary-box-shadow: -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow),
-    0.3rem 0.3rem 1rem var(--dark-primary-dark-shadow);
-  --dark-primary-box-shadow-invert: inset 0.3rem 0.3rem 1rem
+  --dark-primary-box-shadow: -0.5rem -0.5rem 1rem var(--dark-primary-light-shadow),
+    0.5rem 0.5rem 1rem var(--dark-primary-dark-shadow);
+  --dark-primary-box-shadow-invert: inset 0.5rem 0.5rem 1rem
       var(--dark-primary-dark-shadow),
-    inset -0.3rem -0.3rem 1rem var(--dark-primary-light-shadow);
+    inset -0.5rem -0.5rem 1rem var(--dark-primary-light-shadow);
 
-  --text-color: white;
-  --svg-color-filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(81deg)
-    brightness(100%) contrast(101%);
+  --text-color: #cad1e6;
+  --svg-color-filter: invert(89%) sepia(10%) saturate(440%) hue-rotate(190deg) brightness(93%) contrast(85%);
   color: var(--text-color);
   font-size: 1.3rem;
 }
@@ -72,6 +72,7 @@ body.dark {
 .container {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
 }
 
 /*** DEFAULT STYLES ***/

@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import IconLink from './icons/IconLink';
 import Link from 'next/link';
 import Project_short from './projects/Project_short';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const phrases = [
     'I am a Full Stack software developer',
@@ -26,6 +28,8 @@ const phrases = [
 const phrases_length = phrases.length;
 
 const Main = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
     const [description, setDescription] = useState(
         phrases[0].split(' ').map((word, index) => {
             return (
@@ -58,7 +62,18 @@ const Main = () => {
     return (
       <>
         <div className="main">
-          <div className="main__card">
+          <motion.div
+            className="main__card"
+            ref={ref}
+            initial={{ opacity: 0, x: -100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              damping: 10,
+              duration: 1,
+            }}
+          >
             <div className="main__image">
               <div className="main__image__wrapper">
                 <Image
@@ -107,9 +122,20 @@ const Main = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="main__intro">
+          <motion.div
+            className="main__intro"
+            ref={ref}
+            initial={{ opacity: 0, x: 100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              damping: 10,
+              duration: 1,
+            }}
+          >
             <div className="main__intro__text">
               <h4>Hi, I&apos;m</h4>
               <h1>Tony Chen.</h1>
@@ -133,7 +159,7 @@ const Main = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </>
     );

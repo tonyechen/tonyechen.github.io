@@ -5,11 +5,13 @@ import Projects from '../components/Projects';
 
 export default function Home() {
     return (
-      <div className="container">
+      <>
         <Navbar />
-        <Main />
-        <About />
-        <Projects />
-      </div>
+        <div className="container">
+          <Main />
+          <About />
+          <Projects />
+        </div>
+      </>
     );
 }

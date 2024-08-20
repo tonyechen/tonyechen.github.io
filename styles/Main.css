@@ -82,11 +82,12 @@
     padding: 0.5rem 0.5rem;
     border-radius: 0.5rem;
     margin: 1rem 0.5rem 0 0;
-    transition: ease-in-out 300ms;
+    /* transition: ease-in-out 300ms; */
 }
 
 .main__card__button:hover {
     box-shadow: var(--base-primary-box-shadow);
+    transition: ease-in-out 300ms;
 }
 
 .main__intro {
@@ -198,12 +199,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 300ms ease-in-out;
+    /* transition: 300ms ease-in-out; */
 }
 
 .main__project__container:hover {
     box-shadow: none;
     cursor: pointer;
+    transition: 300ms ease-in-out;
 }
 
 @media only screen and (max-width: 800px) {
