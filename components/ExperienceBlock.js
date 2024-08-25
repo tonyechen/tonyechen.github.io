@@ -1,10 +1,17 @@
 import { motion, useInView } from 'framer-motion';
 import React, { useRef } from 'react';
 
-const ExperienceBlock = ({ position }) => {
+const ExperienceBlock = ({
+  position,
+  title,
+  date,
+  content,
+  tools,
+  company,
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
+  console.log(tools);
   return (
     <motion.div
       className={'experience__container ' + position}
@@ -14,17 +21,17 @@ const ExperienceBlock = ({ position }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="experience__content">
-        <p>Software Engineer (hopefully)</p>
-        <p className="experience__date">2015-2020</p>
-        <p className="experience__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
+        <p className="experience__date">{date}</p>
+
+        <p>{company}</p>
+        <p className='experience__title'>{title}</p>
+        <p className="experience__text">{content}</p>
+
+        <div className="experience__tool__container">
+          {tools.map((tool) => (
+            <span className="experience__tool__span">{tool}</span>
+          ))}
+        </div>
       </div>
     </motion.div>
   );

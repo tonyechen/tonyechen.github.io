@@ -9,21 +9,23 @@ import { useRef } from 'react';
 
 const phrases = [
     'I am a Full Stack software developer',
-    'I love any raquet sports, ESPECIALLY TENNIS',
+    'My favorite hobby is hating on pickleball',
     'I am passionate about building software',
     'I am a hard core caffeine addict',
-    'I LOVE a good bowl of RAMEN',
+    'I love a good bowl of ramen',
     'I am horible at speling',
-    'I can bench 205lbs , this is not a flex',
+    'I can bench 215lbs',
     'I can deadlift 315lbs',
     'I can squat 245lbs',
     'I wish I can bench 225 lbs',
-    'I am currently getting my feet wet with AI !',
-    'I enjoy a good game of TENNIS',
-    'I did mention I like beach volleyball, right?',
+    'I am currently learning how to DJ',
+    'I enjoy some actions on the tennis court',
+    'I live in the gym',
     'I <3 Everything Everywhere All At Once',
     'I am Toe Knee, if you can pronounce it',
-    'I am an aspiring brogrammer',
+    'I own a pair of shark slides',
+    'I once had a tiny toe-ny injury',
+    'I wish not to be homeless :('
 ];
 const phrases_length = phrases.length;
 
@@ -112,9 +114,9 @@ const Main = () => {
                 />
               </div>
               <p className="main__card__text">
-                I am an avid developer and a 3rd year student at UCLA studying
+                I am an avid developer and a 4th year student at UCLA studying
                 Computer Science! I am currently on the hunt for an internship
-                for summer 2024!
+                for summer 2025!
               </p>
               <div className="main__card__redirect">
                 <Link href="/resume.pdf">

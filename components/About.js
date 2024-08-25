@@ -98,9 +98,30 @@ const About = () => {
               animate={isInView ? { height: '100%' } : {}} // Expand to 100% width when in view
               transition={{ duration: 5.0, ease: 'easeInOut' }} // Smooth transition
             />
-            <ExperienceBlock position="left" />
-            <ExperienceBlock position="right" />
-            <ExperienceBlock position="left" />
+            <ExperienceBlock
+              position="left"
+              date="June 2023 - September 2024"
+              content="I built and maintain business applications to facilitate the daily operations of the research institute. I work closely with cross functional teams including AI engineers, researchers, and project managers. My notible controbutions include a python data upload automation script, an image processing user dashboard, and a project lifecycle tracking application."
+              title="Software Engineering Intern"
+              company="Ellison Institute of Technology"
+              tools={['Python', 'Next.js', 'TypeScript', 'Microsoft', 'Assana', 'Oracle', 'PL/SQL']}
+            />
+            <ExperienceBlock
+              position="right"
+              date="June 2023 - Present"
+              content="I designed and taught a hands-on engineering course aimed at equipping early-year engineering students with essential industry skills and foundational engineering principles. Through this course, students gained practical experience in Solidworks, C++ Programming, Circuit Design and Wiring"
+              title="E96 Autonomous Rover Instructor"
+              company="University of California, Los Angeles"
+              tools={['SolidWorks', 'C++']}
+            />
+            <ExperienceBlock
+              position="left"
+              date="Feburary 2022 - June 2022"
+              content="I performed various website maintenance and global style repair/upgrade for the UCLA school of Anderson."
+              title="Web Developer"
+              company="UCLA Anderson School of Management"
+              tools={['HTML', 'CSS', 'SASS', 'JavaScript', 'Drupal']}
+            />
           </div>
         </div>
       </div>
