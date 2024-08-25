@@ -29,7 +29,7 @@ const ExperienceBlock = ({
 
         <div className="experience__tool__container">
           {tools.map((tool) => (
-            <span className="experience__tool__span">{tool}</span>
+            <span key={tool} className="experience__tool__span">{tool}</span>
           ))}
         </div>
       </div>
