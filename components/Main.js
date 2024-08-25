@@ -25,7 +25,7 @@ const phrases = [
     'I am Toe Knee, if you can pronounce it',
     'I own a pair of shark slides',
     'I once had a tiny toe-ny injury',
-    'I wish not to be homeless :('
+    'I wish not to be homeless'
 ];
 const phrases_length = phrases.length;
 
