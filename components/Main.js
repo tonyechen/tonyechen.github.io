@@ -116,10 +116,9 @@ const Main = () => {
                 />
               </div>
               <p className="main__card__text">
-                I am a recent UCLA CS graduate and a current master's student at 
-                UW Technology Innovation on the
-                robotics track. I am currently 
-                seeking internship opportunities for Summer 2026!
+                I am a recent UCLA CS graduate and a current master&apos;s
+                student at UW GIX on the robotics track. I am
+                currently seeking internship opportunities for Summer 2026!
               </p>
               <div className="main__card__redirect">
                 <Link href="/resume.pdf">

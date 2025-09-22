@@ -52,15 +52,14 @@ const About = () => {
           <a rel="stylesheet" href="https://eitm.org/">
             <u>Ellison Institute</u>
           </a>{' '}
-          to teaching hands-on engineering as an Instructor for UCLA's
+          to teaching hands-on engineering as an Instructor for UCLA&apos;s
           Autonomous Rover course. I was also actively involved in multiple
           hackathons and numerous project clubs across UCLA.
           <br />
-          <br />
-          I'm currently pursuing a Master's in Technology Innovation at the
-          University of Washington, focusing on the robotics track. Through 
-          this program, I aim to expand my skills in product prototyping, 
-          embbeded programming, robotics, and machine learning.
+          <br />I am currently pursuing a Master&apos;s in Technology Innovation
+          at the University of Washington, focusing on the robotics track.
+          Through this program, I aim to expand my skills in product
+          prototyping, embbeded programming, robotics, and machine learning.
         </p>
 
         {/* <div className="about__info__subsection">
