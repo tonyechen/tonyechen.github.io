@@ -43,21 +43,24 @@ const About = () => {
       <h1 className="about__title">About Me</h1>
       <div className="about__container about__info">
         <p className="about__info__content">
-          Hello! My name is Anthony Chen, but you can call me Tony! I am a 3rd
-          year at UCLA studying Computer Science.
-          <br />
-          <br />
-          My current interest is building full-stack web applications, but
-          I&apos;m actively exploring other fields of CS as well: embedded
-          system, data analytics, mobile development, machine learning,
-          operating system, cloud computing, computer graphics, you name it!
-          <br />
-          <br />I am currently an Intern at{' '}
+          Hi there! My name is Anthony Chen, but you can call me Tony! I
+          recently graduated from University of California, Los Angeles with a
+          B.S. in Computer Science. During my time at UCLA, I developed a strong
+          passion for creating impactful technology. My experience spans from
+          building fulll-stack web applications as a Software Engineering Intern
+          at the{' '}
           <a rel="stylesheet" href="https://eitm.org/">
             <u>Ellison Institute</u>
           </a>{' '}
-          working on business software. I am also an Instructor at UCLA for
-          Autonomous Rover.
+          to teaching hands-on engineering as an Instructor for UCLA's
+          Autonomous Rover course. I was also actively involved in multiple
+          hackathons and numerous project clubs across UCLA.
+          <br />
+          <br />
+          I'm currently pursuing a Master's in Technology Innovation at the
+          University of Washington, focusing on the robotics track. Through 
+          this program, I aim to expand my skills in product prototyping, 
+          embbeded programming, robotics, and machine learning.
         </p>
 
         {/* <div className="about__info__subsection">
@@ -104,7 +107,15 @@ const About = () => {
               content="I built and maintain business applications to facilitate the daily operations of the research institute. I work closely with cross functional teams including AI engineers, researchers, and project managers. My notible controbutions include a python data upload automation script, an image processing user dashboard, and a project lifecycle tracking application."
               title="Software Engineering Intern"
               company="Ellison Institute of Technology"
-              tools={['Python', 'Next.js', 'TypeScript', 'Microsoft', 'Assana', 'Oracle', 'PL/SQL']}
+              tools={[
+                'Python',
+                'Next.js',
+                'TypeScript',
+                'Microsoft',
+                'Assana',
+                'Oracle',
+                'PL/SQL',
+              ]}
             />
             <ExperienceBlock
               position="right"

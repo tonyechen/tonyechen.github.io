@@ -8,24 +8,25 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const phrases = [
-    'I am a Full Stack software developer',
+    'Here are some fun facts about me !',
     'My favorite hobby is hating on pickleball',
     'I am passionate about building software',
     'I am a hard core caffeine addict',
     'I love a good bowl of ramen',
     'I am horible at speling',
     'I can bench 215lbs',
-    'I can deadlift 315lbs',
-    'I can squat 245lbs',
-    'I wish I can bench 225 lbs',
-    'I am currently learning how to DJ',
+    'I can deadlift 365lbs',
     'I enjoy some actions on the tennis court',
     'I live in the gym',
     'I <3 Everything Everywhere All At Once',
     'I am Toe Knee, if you can pronounce it',
     'I own a pair of shark slides',
-    'I once had a tiny toe-ny injury',
-    'I wish not to be homeless'
+    'My favorite marvel hero is Tony Stark',
+    "I was on 2 dance teams at UCLA",
+    'I am currently learning about robotics',
+    "I lived in China for 11 years of my life",
+    'My drink of choice is a long island iced tea',
+    'I achieved elite smash on Pac Man in Smash Bros'
 ];
 const phrases_length = phrases.length;
 
@@ -43,6 +44,7 @@ const Main = () => {
     );
 
     useEffect(() => {
+        phrases.shift();
         const intervalId = setInterval(() => {
             let phrase =
                 phrases[Math.round(Math.random() * phrases_length)] ??
@@ -114,9 +116,10 @@ const Main = () => {
                 />
               </div>
               <p className="main__card__text">
-                I am an avid developer and a 4th year student at UCLA studying
-                Computer Science! I am currently on the hunt for an internship
-                for summer 2025!
+                I am a recent UCLA CS graduate and a current master's student at 
+                UW Technology Innovation on the
+                robotics track. I am currently 
+                seeking internship opportunities for Summer 2026!
               </p>
               <div className="main__card__redirect">
                 <Link href="/resume.pdf">

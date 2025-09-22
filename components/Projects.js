@@ -3,13 +3,13 @@ import Project_short from './projects/Project_short';
 
 const Projects = () => {
     return (
-        <div className="project">
+        <div className="project" id="projects">
             <h1 className="project__title">Projects</h1>
-            <input
+            {/* <input
                 className="project__search__bar"
                 type="text"
                 placeholder="search..."
-            />
+            /> */}
             <div className="projects__container">
                 <Project
                     image={'/takescout-logo.svg'}

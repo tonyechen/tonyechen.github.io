@@ -53,7 +53,7 @@ const Navbar = (props) => {
           <Link href="#about">
             <a>About</a>
           </Link>
-          <Link href="/projects">
+          <Link href="#projects">
             <a>Projects</a>
           </Link>
           <a
