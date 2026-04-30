@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import IconLink from './icons/IconLink';
 import Link from 'next/link';
-import Project_short from './projects/Project_short';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -116,9 +115,9 @@ const Main = () => {
                 />
               </div>
               <p className="main__card__text">
-                I am a recent UCLA CS graduate and a current master&apos;s
-                student at UW GIX on the robotics track. I am
-                currently seeking internship opportunities for Summer 2026!
+                I am a UCLA CS grad and master&apos;s student at UW (Robotics
+                Track), and an incoming Software Engineering Intern at Google
+                for Summer 2026.
               </p>
               <div className="main__card__redirect">
                 <Link href="/resume.pdf">
@@ -148,21 +147,6 @@ const Main = () => {
               </div>
             </div>
 
-            <div className="main__intro__feature__projects">
-              <h4>Featured Projects:</h4>
-              <div className="main__intro__projects">
-                <Project_short
-                  image="/bruin-study-logo.png"
-                  text="Bruin Study"
-                  link="/projects/#bruin-study"
-                />
-                <Project_short
-                  image="/takescout-logo.svg"
-                  text="TakeScout"
-                  link="/projects/#takescout"
-                />
-              </div>
-            </div>
           </motion.div>
         </div>
       </>

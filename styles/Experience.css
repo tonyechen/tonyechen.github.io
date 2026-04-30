@@ -92,20 +92,30 @@
   /* box-shadow: var(--base-primary-box-shadow); */
 }
 
+.experience__company {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.experience__title {
+  font-weight: 400;
+  font-size: 17px;
+  opacity: 0.8;
+}
+
 .experience__date {
   font-weight: 300;
   font-style: italic;
-  font-size: 18px;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 0.75rem;
 }
 
 .experience__text {
   font-weight: 400;
   font-size: 16px;
-  text-align: justify;
-}
-
-.experience__title {
-  font-weight: 300;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .left .experience__tool__container {

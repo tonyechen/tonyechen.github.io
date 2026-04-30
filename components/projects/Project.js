@@ -1,14 +1,18 @@
 import React from "react";
 
-// TODO: expand these to fill the wholon
-// include descriptions
-// link and stuff
-const Project = (props) => {
-  return <a className="project__container" href={props.link}>
-    <img src={props.image} alt="image" className="project__image"/>
-    <p>{props.name}</p>
-    <p>{props.description}</p>
-  </a>;
+const Project = ({ name, description, tools, link }) => {
+  const inner = (
+    <>
+      <p className="project__name">{name}</p>
+      <p className="project__description">{description}</p>
+      <div className="project__tools">
+        {tools.map(t => <span key={t} className="experience__tool__span">{t}</span>)}
+      </div>
+    </>
+  );
+  return link
+    ? <a className="project__container" href={link} target="_blank" rel="noreferrer">{inner}</a>
+    : <div className="project__container">{inner}</div>;
 };
 
 export default Project;

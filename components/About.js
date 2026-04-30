@@ -44,22 +44,21 @@ const About = () => {
       <div className="about__container about__info">
         <p className="about__info__content">
           Hi there! My name is Anthony Chen, but you can call me Tony! I
-          recently graduated from University of California, Los Angeles with a
-          B.S. in Computer Science. During my time at UCLA, I developed a strong
-          passion for creating impactful technology. My experience spans from
-          building fulll-stack web applications as a Software Engineering Intern
-          at the{' '}
+          graduated from UCLA with a B.S. in Computer Science, where I developed
+          a strong passion for building impactful technology — from full-stack
+          web applications as a Software Engineering Intern at the{' '}
           <a rel="stylesheet" href="https://eitm.org/">
             <u>Ellison Institute</u>
           </a>{' '}
-          to teaching hands-on engineering as an Instructor for UCLA&apos;s
-          Autonomous Rover course. I was also actively involved in multiple
-          hackathons and numerous project clubs across UCLA.
+          to teaching hands-on engineering as the Autonomous Rover course
+          instructor. I was also deeply involved in hackathons and project clubs
+          across campus.
           <br />
           <br />I am currently pursuing a Master&apos;s in Technology Innovation
-          at the University of Washington, focusing on the robotics track.
-          Through this program, I aim to expand my skills in product
-          prototyping, embbeded programming, robotics, and machine learning.
+          at the University of Washington on the robotics track, and I will be
+          joining Google as a Software Engineering Intern this summer. Through my
+          graduate program, I am expanding my skills in embedded programming,
+          robotics, and machine learning.
         </p>
 
         {/* <div className="about__info__subsection">
@@ -102,32 +101,40 @@ const About = () => {
             />
             <ExperienceBlock
               position="left"
-              date="June 2023 - September 2024"
-              content="I built and maintain business applications to facilitate the daily operations of the research institute. I work closely with cross functional teams including AI engineers, researchers, and project managers. My notible controbutions include a python data upload automation script, an image processing user dashboard, and a project lifecycle tracking application."
+              date="June 2026 – September 2026"
+              content="I will be joining the Geo Map Route Decoration Platform team, working on systems that power map rendering and route visualization at scale."
+              title="Software Engineering Intern"
+              company="Google"
+              tools={['C++']}
+            />
+            <ExperienceBlock
+              position="right"
+              date="June 2023 – September 2024"
+              content="I built and maintained business applications to facilitate the daily operations of the research institute. Working closely with cross-functional teams including AI engineers, researchers, and project managers, my notable contributions include a Python data pipeline, a computer vision model dashboard, and a project lifecycle tracking application."
               title="Software Engineering Intern"
               company="Ellison Institute of Technology"
               tools={[
                 'Python',
                 'Next.js',
                 'TypeScript',
-                'Microsoft',
-                'Assana',
+                'Docker',
+                'Nginx',
                 'Oracle',
-                'PL/SQL',
+                'REST API',
               ]}
             />
             <ExperienceBlock
-              position="right"
-              date="June 2023 - Present"
-              content="I designed and taught a hands-on engineering course aimed at equipping early-year engineering students with essential industry skills and foundational engineering principles. Through this course, students gained practical experience in Solidworks, C++ Programming, Circuit Design and Wiring"
+              position="left"
+              date="September 2023 – June 2025"
+              content="I designed and taught a hands-on engineering course equipping early-year students with essential industry skills and foundational engineering principles, including SolidWorks, C++ programming, Arduino, and circuit design and wiring. I instructed 100+ students across two years."
               title="E96 Autonomous Rover Instructor"
               company="University of California, Los Angeles"
-              tools={['SolidWorks', 'C++']}
+              tools={['SolidWorks', 'C++', 'Arduino']}
             />
             <ExperienceBlock
-              position="left"
-              date="Feburary 2022 - June 2022"
-              content="I performed various website maintenance and global style repair/upgrade for the UCLA school of Anderson."
+              position="right"
+              date="February 2022 – June 2022"
+              content="I performed global-styling repairs and code maintenance for the UCLA Anderson School of Management website, and managed the event website for the Riordan Programs Anniversary using responsive web design principles."
               title="Web Developer"
               company="UCLA Anderson School of Management"
               tools={['HTML', 'CSS', 'SASS', 'JavaScript', 'Drupal']}
